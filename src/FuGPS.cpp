@@ -234,7 +234,7 @@ void FuGPS::process()
     DPRINTLN(_tokensCount);
 
     // RMC - Recommended Minimum Specific GPS/Transit Data
-    if (_tokensCount == 13 && strcmp(getSentenceId(), "RMC") == 0)
+    if (_tokensCount == 14 && strcmp(getSentenceId(), "RMC") == 0)
     {
 #ifdef FUGPS_DEBUG
         rmc_counter++;
